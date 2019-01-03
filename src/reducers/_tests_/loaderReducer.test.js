@@ -1,4 +1,4 @@
-import { loaderReducer } from './loaderReducer';
+import { loaderReducer } from '../loaderReducer';
 
 describe('loaderReducer', () => {
   it('should return default state', () => {
