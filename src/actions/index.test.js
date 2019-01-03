@@ -1,7 +1,7 @@
 import * as actions from '../actions';
 
-describe('addRecipes', () => {
-  it('should have a type of ADD_RECIPES', () => {
+describe('actions', () => {
+  it('addRecipes should have a type of ADD_RECIPES', () => {
     const mockRecipes = [
       { label: 'baked brie' },
       { label: 'apple and brie omlette' },
@@ -16,10 +16,8 @@ describe('addRecipes', () => {
     const result = actions.addRecipes(mockRecipes);
     expect(result).toEqual(expectedAction);
   });
-});
 
-describe('hasErrored', () => {
-  it('should have a type of HAS_ERRORED', () => {
+  it('hasErrored should have a type of HAS_ERRORED', () => {
     const mockError = 'An error has occurred';
     const expectedAction = {
       type: 'HAS_ERRORED',
@@ -29,10 +27,8 @@ describe('hasErrored', () => {
     const result = actions.hasErrored(mockError);
     expect(result).toEqual(expectedAction);
   });
-});
 
-describe('isLoading', () => {
-  it('should have a type of IS_LOADING', () => {
+  it('isLoading should have a type of IS_LOADING', () => {
     const mockBool = true;
     const expectedAction = {
       type: 'IS_LOADING',
