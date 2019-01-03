@@ -31,6 +31,14 @@ Tanj McMeans- [Github](https://github.com/TMcMeans)
 
 ### Original Wireframe
 
-![home-page](assets/randbrieWireframe.png)
+![welcome-screen](assets/welcomescreen.png)
+
+![desktop-view](assets/desktopview.png)
+
+![searching-recipes](assets/selectingCheese.png)
+
+![choosing-favorites](assets/favorites.png)
+
+![mobile-view](assets/mobileview.png)
 
 ### Implementation
