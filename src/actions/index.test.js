@@ -19,12 +19,27 @@ describe('addRecipes', () => {
 });
 
 describe('hasErrored', () => {
-  const mockError = 'An error has occurred';
-  const expectedAction = {
-    type: 'HAS_ERRORED',
-    message: mockError
-  };
+  it('should have a type of HAS_ERRORED', () => {
+    const mockError = 'An error has occurred';
+    const expectedAction = {
+      type: 'HAS_ERRORED',
+      message: mockError
+    };
 
-  const result = actions.hasErrored(mockError);
-  expect(result).toEqual(expectedAction);
+    const result = actions.hasErrored(mockError);
+    expect(result).toEqual(expectedAction);
+  });
+});
+
+describe('isLoading', () => {
+  it('should have a type of IS_LOADING', () => {
+    const mockBool = true;
+    const expectedAction = {
+      type: 'IS_LOADING',
+      isLoading: true
+    };
+
+    const result = actions.isLoading(mockBool);
+    expect(result).toEqual(expectedAction);
+  });
 });
