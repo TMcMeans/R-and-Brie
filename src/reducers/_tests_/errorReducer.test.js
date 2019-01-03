@@ -1,4 +1,4 @@
-import { errorReducer } from './errorReducer';
+import { errorReducer } from '../errorReducer';
 
 describe('errorReducer', () => {
   it('should return default state', () => {

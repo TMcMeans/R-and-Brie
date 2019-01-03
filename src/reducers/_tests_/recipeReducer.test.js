@@ -1,4 +1,4 @@
-import { recipeReducer } from './recipeReducer';
+import { recipeReducer } from '../recipeReducer';
 
 describe('recipeReducer', () => {
   it('should return initial state', () => {

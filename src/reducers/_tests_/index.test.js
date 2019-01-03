@@ -1,8 +1,8 @@
-import rootReducer from './index';
+import rootReducer from '../index';
 import { createStore } from 'redux';
-import { errorReducer } from './errorReducer';
-import { loaderReducer } from './loaderReducer';
-import { recipeReducer } from './recipeReducer';
+import { errorReducer } from '../errorReducer';
+import { loaderReducer } from '../loaderReducer';
+import { recipeReducer } from '../recipeReducer';
 
 describe('rootReducer', () => {
   let store = createStore(rootReducer);
