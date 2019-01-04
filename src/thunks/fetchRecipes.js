@@ -9,7 +9,7 @@ export const fetchRecipes = url => {
         throw Error(response.statusText);
       }
       dispatch(isLoading(false));
-      const data = response.json();
+      const data = await response.json();
       const recipes = data.hits;
       dispatch(addRecipes(recipes));
     } catch (error) {
