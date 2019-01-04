@@ -8,10 +8,10 @@ export const cleanRecipeData = uncleanRecipes => {
       source: recipe.recipe.source,
       url: recipe.recipe.url,
       yield: recipe.recipe.yield,
+      calories: Math.floor(recipe.recipe.calories),
       dietLabels: recipe.recipe.dietLabels,
       healthLabels: recipe.recipe.healthLabels,
-      ingredientLines: recipe.recipe.ingredientLines,
-      id
+      ingredientLines: recipe.recipe.ingredientLines
     };
   });
   return cleanRecipes;
