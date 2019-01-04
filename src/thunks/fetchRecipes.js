@@ -1,4 +1,5 @@
 import { addRecipes, hasErrored, isLoading } from '../actions';
+import * as Helper from '../helper/helper';
 
 export const fetchRecipes = url => {
   return async dispatch => {
@@ -10,8 +11,10 @@ export const fetchRecipes = url => {
       }
       dispatch(isLoading(false));
       const data = await response.json();
-      const recipes = data.hits;
-      dispatch(addRecipes(recipes));
+      const uncleanRecipes = data.hits;
+
+      const cleanRecipes = Helper.cleanRecipeData(uncleanRecipes);
+      dispatch(addRecipes(cleanRecipes));
     } catch (error) {
       dispatch(hasErrored(error.message));
     }
