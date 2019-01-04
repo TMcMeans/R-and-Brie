@@ -1,7 +1,7 @@
 export const cleanRecipeData = uncleanRecipes => {
   const cleanRecipes = uncleanRecipes.map(recipe => {
-    const uuidv4 = require('uuid/v4');
-    const id = uuidv4();
+    // const uuidv4 = require('uuid/v4');
+    // const id = uuidv4();
     return {
       label: recipe.recipe.label,
       image: recipe.recipe.image,
@@ -15,4 +15,13 @@ export const cleanRecipeData = uncleanRecipes => {
     };
   });
   return cleanRecipes;
+};
+
+export const sendToLocalStorage = recipes => {
+  localStorage.setItem('recipes', JSON.stringify(recipes));
+};
+
+export const getFromLocalStorage = () => {
+  const recipes = JSON.parse(localStorage.getItem('recipes'));
+  return recipes;
 };
