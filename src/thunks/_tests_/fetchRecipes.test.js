@@ -9,7 +9,7 @@ describe('fetchRecipes', () => {
     mockDispatch = jest.fn();
   });
 
-  it('should call dispatch with the isLoading action', () => {
+  it('should call dispatch with the isLoading(true)', () => {
     const thunk = fetchRecipes(mockUrl);
     thunk(mockDispatch);
     expect(mockDispatch).toHaveBeenCalledWith(isLoading(true));
@@ -28,10 +28,37 @@ describe('fetchRecipes', () => {
       hasErrored('An error has occured')
     );
   });
-  it('should dispatch isLoading(false) if the response is ok', () => {
-    //ADD ASSERTIONS
+  it('should dispatch isLoading(false) if the response is ok', async () => {
+    window.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve({
+        ok: true
+      })
+    );
+
+    const thunk = fetchRecipes(mockUrl);
+    await thunk(mockDispatch);
+    expect(mockDispatch).toHaveBeenCalledWith(isLoading(false));
   });
-  it('should dispatch addRecipes if the response is ok', () => {
-    //ADD ASSERTIONS
+
+  it('should dispatch addRecipes if the response is ok', async () => {
+    const mockRecipes = [
+      { label: 'Sharp cheddar sandwich' },
+      { label: 'Cheddar olives' },
+      { label: 'Cheddar cheese puffs' }
+    ];
+
+    window.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({
+            hits: mockRecipes
+          })
+      })
+    );
+
+    const thunk = fetchRecipes(mockUrl);
+    await thunk(mockDispatch);
+    expect(mockDispatch).toHaveBeenCalledWith(addRecipes(mockRecipes));
   });
 });
