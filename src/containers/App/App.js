@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { app_key, app_id } from '../../apikey';
+import { Switch, Route, Redirect, withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import * as Helper from '../../helper/helper';
@@ -25,6 +27,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <Nav />
+        <Switch>
+          {/* <Route exact path="/recipes" component={CardContainer} /> */}
+        </Switch>
       </div>
     );
   }
@@ -38,7 +43,9 @@ const mapDispatchToProps = dispatch => ({
   fetchRecipes: url => dispatch(fetchRecipes(url))
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);
