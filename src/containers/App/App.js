@@ -7,6 +7,7 @@ import * as Helper from '../../helper/helper';
 import '../../styles/main.scss';
 
 import { Header } from '../Header/Header';
+import Nav from '../Nav/Nav';
 
 class App extends Component {
   async componentDidMount() {
@@ -23,6 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Nav />
       </div>
     );
   }

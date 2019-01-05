@@ -35,7 +35,7 @@ Tanj McMeans- [Github](https://github.com/TMcMeans)
 
 ![desktop-view](assets/desktopview.png)
 
-![searching-recipes](assets/selectingcheese.png)
+![selecting-cheese](assets/selectingcheese.png)
 
 ![single-recipe-view](assets/singleRecipeView.png)
 
