@@ -4,6 +4,9 @@ import { app_key, app_id } from '../../apikey';
 
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import * as Helper from '../../helper/helper';
+import '../../styles/main.scss';
+
+import { Header } from '../Header/Header';
 
 class App extends Component {
   async componentDidMount() {
@@ -13,12 +16,13 @@ class App extends Component {
       const url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=brie`;
       this.props.fetchRecipes(url);
     }
+    //dispatch addRecipes action to send data to global state tree
   }
 
   render() {
     return (
       <div className="App">
-        <h1>R and BRIE</h1>
+        <Header />
       </div>
     );
   }
