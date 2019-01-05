@@ -1,0 +1,27 @@
+.card {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  .fav-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $mainAccentColor;
+    .fa-heart {
+      color: $mainBackgroundColor;
+      font-size: 1.5em;
+    }
+  }
+  .label {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: $mainAccentColor;
+    text-align: center;
+    margin: 50px auto 0 auto;
+  }
+}
