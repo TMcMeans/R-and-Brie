@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-family: 'Rozha One', serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+    margin: 0 -10px 0 auto;
+    color: $mainFontColor;
+  }
+  .favs {
+    font-family: 'Rozha One', serif;
+    font-size: 2.5em;
+    height: 50px;
+    margin: 0 5px 0 auto;
+    color: $mainFontColor;
+  }
+  .total-favs {
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    color: $mainFontColor;
+    background: $mainAccentColor;
+  }
+}
