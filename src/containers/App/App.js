@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { app_key, app_id } from '../../apikey';
-import { Switch, Route, Redirect, withRouter } from 'react-router';
+import { Switch, Route, withRouter } from 'react-router';
 
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions';
@@ -11,6 +11,7 @@ import '../../styles/main.scss';
 import { Header } from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
+import { Welcome } from '../../components/Welcome/Welcome';
 
 class App extends Component {
   async componentDidMount() {
@@ -30,6 +31,7 @@ class App extends Component {
         <Nav />
         <Switch>
           <Route exact path="/recipes" component={CardContainer} />
+          <Route exact path="/" component={Welcome} />
         </Switch>
       </div>
     );
