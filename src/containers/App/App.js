@@ -16,14 +16,13 @@ import { RecipeView } from '../RecipeView/RecipeView';
 
 class App extends Component {
   async componentDidMount() {
-    const recipes = Helper.getFromLocalStorage();
-    if (!recipes) {
-      const url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=brie`;
-      this.props.fetchRecipes(url);
-    } else {
-      this.props.addRecipes(recipes);
-    }
-    //Save all recipe cheese types to localStorage???
+    // const recipes = Helper.getFromLocalStorage();
+    // if (!recipes) {
+    //   const url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=brie`;
+    //   this.props.fetchRecipes(url);
+    // } else {
+    //   this.props.addRecipes(recipes);
+    // }
   }
 
   render() {
@@ -36,7 +35,7 @@ class App extends Component {
           <Route
             path="/type/:label"
             render={({ match }) => {
-              return <CardContainer />;
+              return <CardContainer label={match.params.label} />;
             }}
           />
           <Route
@@ -46,7 +45,7 @@ class App extends Component {
               const { recipes } = this.props;
               const recipe = recipes.find(recipe => recipe.label === label);
               if (recipe) {
-                return <RecipeView {...recipe} />;
+                return (<RecipeView {...recipe} />);
               }
             }}
           />

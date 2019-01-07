@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { app_key, app_id } from '../../apikey';
+
+import * as Helper from '../../helper/helper';
+import { fetchRecipes } from '../../thunks/fetchRecipes';
+import { addRecipes } from '../../actions/index';
 
 class Nav extends Component {
-  constructor() {
-    super();
-    this.state = {
-      selectedCheese: ''
-    };
+
+  updateRecipes = async () => {
+    const { label, fetchRecipes, addRecipes } = this.props;
+    let url;
+    let recipes;
+    recipes = Helper.getFromLocalStorage(label);
+    console.log(`${label}: ${recipes}`)
+    if (!recipes) {
+      url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=${label}`;
+      await fetchRecipes(label, url);
+    } else {
+      await addRecipes(recipes);
+    }
   }
 
   render() {
@@ -66,7 +80,7 @@ class Nav extends Component {
           </div>
           Fontina
         </Link>
-        <Link className="nav-item" to={`/type/american`}>
+        <Link className="nav-item" to={`/type/american%20cheese`}>
           <div className="cheese">
             <img src="" alt="" id="american" />
           </div>
@@ -77,4 +91,17 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+const mapStateToProps = state => ({
+  recipes: state.recipes,
+  isLoading: state.isLoading
+});
+
+const mapDispatchToProps = dispatch => ({
+  fetchRecipes: (label, url) => dispatch(fetchRecipes(label, url)),
+  addRecipes: recipes => dispatch(addRecipes(recipes))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Nav);
