@@ -23,6 +23,7 @@ class App extends Component {
     } else {
       this.props.addRecipes(recipes);
     }
+    //Save all recipe cheese types to localStorage???
   }
 
   render() {
@@ -31,15 +32,19 @@ class App extends Component {
         <Header />
         <Nav />
         <Switch>
-          <Route exact path="/recipes" component={CardContainer} />
           <Route exact path="/" component={Welcome} />
+          <Route
+            path="/type/:label"
+            render={({ match }) => {
+              return <CardContainer />;
+            }}
+          />
           <Route
             path="/recipes/:label"
             render={({ match }) => {
               const { label } = match.params;
               const { recipes } = this.props;
               const recipe = recipes.find(recipe => recipe.label === label);
-
               if (recipe) {
                 return <RecipeView {...recipe} />;
               }
