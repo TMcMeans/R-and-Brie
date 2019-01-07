@@ -35,7 +35,7 @@ class App extends Component {
           <Route
             path="/type/:label"
             render={({ match }) => {
-              return <CardContainer label={match.params.label} />;
+              return <CardContainer label={match.params.label} history={this.props.history} />;
             }}
           />
           <Route

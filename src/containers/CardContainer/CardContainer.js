@@ -10,8 +10,10 @@ import * as Helper from '../../helper/helper';
 
 
 class CardContainer extends Component {
+
   render() {
-    const { label, isLoading, recipes } = this.props
+    const { label, isLoading, recipes, history } = this.props
+    // console.log(history.location.pathname)
     const recipeCards = recipes.map(recipe => {
       return <Card recipe={recipe} key={recipe.label} />;
     });

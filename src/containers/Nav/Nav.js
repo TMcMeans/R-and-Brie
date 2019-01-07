@@ -9,12 +9,12 @@ import { addRecipes } from '../../actions/index';
 
 class Nav extends Component {
 
-  updateRecipes = async () => {
-    const { label, fetchRecipes, addRecipes } = this.props;
+  updateRecipes = async (label) => {
+    const { fetchRecipes, addRecipes } = this.props;
     let url;
     let recipes;
     recipes = Helper.getFromLocalStorage(label);
-    console.log(`${label}: ${recipes}`)
+    // console.log(`${label}: ${recipes}`)
     if (!recipes) {
       url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=${label}`;
       await fetchRecipes(label, url);
@@ -26,61 +26,61 @@ class Nav extends Component {
   render() {
     return (
       <div className="nav">
-        <Link className="nav-item" to={`/type/brie`}>
+        <Link className="nav-item" to={`/type/brie`} onClick={() => { this.updateRecipes('brie') }}>
           <div className="cheese">
             <img src="" alt="" id="brie" />
           </div>
           Brie
         </Link>
-        <Link className="nav-item" to={`/type/parmesean`}>
+        <Link className="nav-item" to={`/type/parmesean`} onClick={() => { this.updateRecipes('parmesean') }}>
           <div className="cheese">
             <img src="" alt="" id="parmesean" />
           </div>
           Parmesan
         </Link>
-        <Link className="nav-item" to={`/type/feta`}>
+        <Link className="nav-item" to={`/type/feta`} onClick={() => { this.updateRecipes('feta') }}>
           <div className="cheese">
             <img src="" alt="" id="feta" />
           </div>
           Feta
         </Link>
-        <Link className="nav-item" to={`/type/swiss`}>
+        <Link className="nav-item" to={`/type/swiss`} onClick={() => { this.updateRecipes('swiss') }}>
           <div className="cheese">
             <img src="" alt="" id="swiss" />
           </div>
           Swiss
         </Link>
-        <Link className="nav-item" to={`/type/mozzarella`}>
+        <Link className="nav-item" to={`/type/mozzarella`} onClick={() => { this.updateRecipes('mozzarella') }}>
           <div className="cheese">
             <img src="" alt="" id="mozzarella" />
           </div>
           Mozzarella
         </Link>
-        <Link className="nav-item" to={`/type/cheddar`}>
+        <Link className="nav-item" to={`/type/cheddar`} onClick={() => { this.updateRecipes('cheddar') }}>
           <div className="cheese">
             <img src="" alt="" id="cheddar" />
           </div>
           Cheddar
         </Link>
-        <Link className="nav-item" to={`/type/blue%20cheese`}>
+        <Link className="nav-item" to={`/type/blue%20cheese`} onClick={() => { this.updateRecipes('blue cheese') }}>
           <div className="cheese">
             <img src="" alt="" id="bluecheese" />
           </div>
           Blue
         </Link>
-        <Link className="nav-item" to={`/type/asiago`}>
+        <Link className="nav-item" to={`/type/asiago`} onClick={() => { this.updateRecipes('asiago') }}>
           <div className="cheese">
             <img src="" alt="" id="asiago" />
           </div>
           Asiago
         </Link>
-        <Link className="nav-item" to={`/type/fontina`}>
+        <Link className="nav-item" to={`/type/fontina`} onClick={() => { this.updateRecipes('fontina') }}>
           <div className="cheese">
             <img src="" alt="" id="fontina" />
           </div>
           Fontina
         </Link>
-        <Link className="nav-item" to={`/type/american%20cheese`}>
+        <Link className="nav-item" to={`/type/american%20cheese`} onClick={() => { this.updateRecipes('american cheese') }}>
           <div className="cheese">
             <img src="" alt="" id="american" />
           </div>
