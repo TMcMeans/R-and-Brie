@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { app_key, app_id } from '../../apikey';
 import { Switch, Route, withRouter } from 'react-router';
 
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions';
-import * as Helper from '../../helper/helper';
 import '../../styles/main.scss';
 
 import { Header } from '../Header/Header';
@@ -13,31 +11,28 @@ import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
 import { Welcome } from '../../components/Welcome/Welcome';
 import { RecipeView } from '../RecipeView/RecipeView';
+import { Error } from '../Error/Error'
 
 class App extends Component {
-  async componentDidMount() {
-    // const recipes = Helper.getFromLocalStorage();
-    // if (!recipes) {
-    //   const url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=brie`;
-    //   this.props.fetchRecipes(url);
-    // } else {
-    //   this.props.addRecipes(recipes);
-    // }
-  }
-
   render() {
     return (
       <div className="App">
         <Switch>
-          {/* <Route exact path="/home" component={Welcome} /> */}
-          <Route path='/home' render={props =>
+          <Route exact path='/home' render={props =>
             <div>
               <Header />
               <Nav />
               <Welcome />
             </div>
           } />
-          <Route path="/type/:label" render={({ match }) =>
+          <Route exact path='/' render={props =>
+            <div>
+              <Header />
+              <Nav />
+              <Welcome />
+            </div>
+          } />
+          <Route exact path="/type/:label" render={({ match }) =>
             <div>
               <Header />
               <Nav />
@@ -46,7 +41,7 @@ class App extends Component {
           } />
 
           <Route
-            path="/recipes/:label"
+            exact path="/recipes/:label"
             render={({ match }) => {
               const { label } = match.params;
               const { recipes } = this.props;
@@ -56,6 +51,9 @@ class App extends Component {
               }
             }}
           />
+          <Route path="/" render={() => {
+            return <Error />
+          }} />
         </Switch>
       </div>
     );

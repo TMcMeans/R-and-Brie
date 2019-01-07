@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { app_key, app_id } from '../../apikey';
 
 import { Card } from '../../components/Card/Card';
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions/index';
 import { Error } from '../Error/Error';
-import * as Helper from '../../helper/helper';
-
 
 class CardContainer extends Component {
 
