@@ -12,6 +12,7 @@ import { Header } from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
 import { Welcome } from '../../components/Welcome/Welcome';
+import { RecipeView } from '../RecipeView/RecipeView';
 
 class App extends Component {
   async componentDidMount() {
@@ -32,6 +33,18 @@ class App extends Component {
         <Switch>
           <Route exact path="/recipes" component={CardContainer} />
           <Route exact path="/" component={Welcome} />
+          <Route
+            path="/recipes/:label"
+            render={({ match }) => {
+              const { label } = match.params;
+              const { recipes } = this.props;
+              const recipe = recipes.find(recipe => recipe.label === label);
+
+              if (recipe) {
+                return <RecipeView {...recipe} />;
+              }
+            }}
+          />
         </Switch>
       </div>
     );
