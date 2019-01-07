@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ReviewForm from '../ReviewForm/ReviewForm';
+
 export const RecipeView = props => {
   const {
     calories,
@@ -27,7 +29,7 @@ export const RecipeView = props => {
   });
 
   return (
-    <div className="recipe-view">
+    <div className="recipe-view-page">
       <h1 className="recipe-label">{props.label}</h1>
       <div className="recipe-overview">
         <img src={image} alt={cleanLabel} />
@@ -51,6 +53,10 @@ export const RecipeView = props => {
         <h3>Ingredients</h3>
         {ingredientList}
         <a href={url}>Make it</a>
+      </div>
+
+      <div className="review-section">
+        <ReviewForm label={label} />
       </div>
     </div>
   );
