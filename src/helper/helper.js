@@ -17,11 +17,11 @@ export const cleanRecipeData = uncleanRecipes => {
   return cleanRecipes;
 };
 
-export const sendToLocalStorage = recipes => {
-  localStorage.setItem('recipes', JSON.stringify(recipes));
+export const sendToLocalStorage = (key, recipes) => {
+  localStorage.setItem(key, JSON.stringify(recipes));
 };
 
-export const getFromLocalStorage = () => {
-  const recipes = JSON.parse(localStorage.getItem('recipes'));
+export const getFromLocalStorage = key => {
+  const recipes = JSON.parse(localStorage.getItem(key));
   return recipes;
 };
