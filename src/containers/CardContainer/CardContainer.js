@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { Card } from '../../components/Card/Card';
 
-export const CardContainer = ({ recipes }) => {
+export const CardContainer = ({ recipes, match }) => {
   const recipeCards = recipes.map(recipe => {
     return <Card {...recipe} key={recipe.label} />;
   });
