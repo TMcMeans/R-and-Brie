@@ -28,16 +28,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Nav />
+        {/* <Header />
+        <Nav /> */}
         <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route
-            path="/type/:label"
-            render={({ match }) => {
-              return <CardContainer label={match.params.label} history={this.props.history} />;
-            }}
-          />
+          {/* <Route exact path="/home" component={Welcome} /> */}
+          <Route path='/home' render={props =>
+            <div>
+              <Header />
+              <Nav />
+              <Welcome />
+            </div>
+          } />
+          <Route path="/type/:label" render={({ match }) =>
+            <div>
+              <Header />
+              <CardContainer label={match.params.label} history={this.props.history} />
+            </div>
+          } />
+
           <Route
             path="/recipes/:label"
             render={({ match }) => {
