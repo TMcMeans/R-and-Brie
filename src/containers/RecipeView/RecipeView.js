@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ReviewForm from '../ReviewForm/ReviewForm';
+import { Header } from '../Header/Header'
 
 export const RecipeView = props => {
   const {
@@ -30,6 +31,7 @@ export const RecipeView = props => {
 
   return (
     <div className="recipe-view-page">
+      <Header />
       <h1 className="recipe-label">{props.label}</h1>
       <div className="recipe-overview">
         <img src={image} alt={cleanLabel} />
