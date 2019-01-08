@@ -6,12 +6,12 @@ import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions';
 import '../../styles/main.scss';
 
-import { Header } from '../Header/Header';
+import { Header } from '../../components/Header/Header'
 import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
 import { Welcome } from '../../components/Welcome/Welcome';
 import RecipeView from '../RecipeView/RecipeView';
-import { Error } from '../Error/Error'
+import { Error } from '../../components/Error/Error'
 
 class App extends Component {
   render() {

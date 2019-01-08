@@ -4,8 +4,7 @@ export const ReviewSection = ({ currentReviews }) => {
   let reviews;
   if (currentReviews.length > 0) {
     reviews = currentReviews.map(review => {
-      console.log(review.date)
-      return (<div className="review-section">
+      return (<div className="review-section" key={review.name}>
         {/* <p>{review.date}</p> */}
         <p>{review.name}</p>
         <p>{review.caption}</p>

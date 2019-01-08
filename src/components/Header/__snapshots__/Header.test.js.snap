@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match snapshot with correct data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Link
+          className="title"
+          replace={false}
+          to="/home"
+        >
+          R&Brie
+        </Link>,
+        <h1
+          className="favs"
+        >
+          Favs 
+          <span
+            className="total-favs"
+          >
+            0
+          </span>
+        </h1>,
+      ],
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "R&Brie",
+          "className": "title",
+          "replace": false,
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "R&Brie",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Favs ",
+            <span
+              className="total-favs"
+            >
+              0
+            </span>,
+          ],
+          "className": "favs",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Favs ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "0",
+              "className": "total-favs",
+            },
+            "ref": null,
+            "rendered": "0",
+            "type": "span",
+          },
+        ],
+        "type": "h1",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Link
+            className="title"
+            replace={false}
+            to="/home"
+          >
+            R&Brie
+          </Link>,
+          <h1
+            className="favs"
+          >
+            Favs 
+            <span
+              className="total-favs"
+            >
+              0
+            </span>
+          </h1>,
+        ],
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "R&Brie",
+            "className": "title",
+            "replace": false,
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "R&Brie",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Favs ",
+              <span
+                className="total-favs"
+              >
+                0
+              </span>,
+            ],
+            "className": "favs",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Favs ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "0",
+                "className": "total-favs",
+              },
+              "ref": null,
+              "rendered": "0",
+              "type": "span",
+            },
+          ],
+          "type": "h1",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

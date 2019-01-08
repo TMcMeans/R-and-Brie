@@ -13,7 +13,7 @@ export const isLoading = bool => ({
   isLoading: bool
 });
 
-export const addReview = (review) => ({
+export const addReview = review => ({
   type: 'ADD_REVIEW',
   review: review
 })

@@ -1,10 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Loader } from './Loader'
 
-describe('Loader', () => {
+import { Error } from './Error'
+
+describe('Error', () => {
   it('should match snapshot with correct data passed in', () => {
-    const wrapper = shallow(<Loader />)
+    const wrapper = shallow(<Error />)
     expect(wrapper).toMatchSnapshot()
   })
 })

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 export const Card = props => {
   const { image, label } = props.recipe;
@@ -20,3 +21,7 @@ export const Card = props => {
     </Link>
   );
 };
+
+Card.propTypes = {
+  recipe: PropTypes.object.isRequired
+}
