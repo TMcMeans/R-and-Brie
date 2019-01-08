@@ -1,4 +1,5 @@
 import * as Helper from '../helper/helper';
+import LocalStorageMock from './localStorageMock'
 
 describe('Helper', () => {
   it('cleanRecipeData should return an array of cleanRecipes', () => {
@@ -663,7 +664,7 @@ describe('Helper', () => {
         label: 'Brie & Spinach Croissants',
         source: 'BBC Good Food',
         url: 'http://www.bbcgoodfood.com/recipes/4324/',
-        yield: 2
+        yields: 2
       }
     ];
 
@@ -671,4 +672,34 @@ describe('Helper', () => {
 
     expect(result).toEqual(expected);
   });
+  it('should send recipes to localStorage with a key', () => {
+    window.localStorage = new LocalStorageMock();
+
+    const mockKey = 'brie';
+    const mockRecipes = [
+      { label: 'baked brie' },
+      { label: 'apple and brie omlette' },
+      { label: 'penne brie with apricots' }
+    ];
+
+    Helper.sendToLocalStorage(mockKey, mockRecipes)
+    expect(window.localStorage[mockKey]).toEqual(JSON.stringify(mockRecipes))
+
+
+  })
+  it('should get recipes from localStorage by key', () => {
+    window.localStorage = new LocalStorageMock();
+    const mockKey = 'brie';
+    const mockRecipes = [
+      { label: 'baked brie' },
+      { label: 'apple and brie omlette' },
+      { label: 'penne brie with apricots' }
+    ];
+
+    localStorage.setItem(mockKey, JSON.stringify(mockRecipes));
+    const result = Helper.getFromLocalStorage(mockKey)
+
+    expect(result).toEqual(mockRecipes)
+
+  })
 });
