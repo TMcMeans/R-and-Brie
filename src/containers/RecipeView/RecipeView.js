@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 import ReviewForm from '../ReviewForm/ReviewForm';
-import { Header } from '../Header/Header'
+import { Header } from '../../components/Header/Header'
 import { ReviewSection } from '../../components/ReviewSection/ReviewSection'
 
 

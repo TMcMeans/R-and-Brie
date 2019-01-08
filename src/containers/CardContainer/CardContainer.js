@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Card } from '../../components/Card/Card';
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions/index';
-import { Error } from '../Error/Error';
+import { Error } from '../../components/Error/Error'
 
 class CardContainer extends Component {
 
