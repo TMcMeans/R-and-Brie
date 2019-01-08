@@ -1,0 +1,1344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeView should match snapshot with correct data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RecipeView
+    calories={910}
+    dietLabels={
+      Array [
+        "Low-Carb",
+      ]
+    }
+    healthLabels={
+      Array [
+        "Sugar-Conscious",
+        "Vegetarian",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free",
+      ]
+    }
+    image="https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg"
+    ingredientLines={
+      Array [
+        "One 10-ounce head radicchio",
+        "2 tablespoons balsamic vinegar",
+        "Salt and freshly ground pepper",
+        "2 teaspoons chopped fresh oregano",
+        "1/4 cup extra-virgin olive oil",
+        "3/4 cup (3 ounces) finely grated fontina",
+      ]
+    }
+    label="Grilled Radicchio and Fontina"
+    reviews={Array []}
+    url="http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina"
+    yields={4}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header />,
+        <h1
+          className="recipe-label"
+        >
+          Grilled Radicchio and Fontina
+        </h1>,
+        <div
+          className="recipe-overview"
+        >
+          <img
+            src="https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg"
+          />
+          <section
+            className="nutrition-overview"
+          >
+            <h3>
+              Yields
+            </h3>
+            <ul>
+              <li>
+                4
+              </li>
+            </ul>
+            <h3>
+              Diet & Health Labels
+            </h3>
+            <ul>
+              <li>
+                Low-Carb
+              </li>
+              <li>
+                Sugar-Conscious
+              </li>
+              <li>
+                Vegetarian
+              </li>
+              <li>
+                Peanut-Free
+              </li>
+              <li>
+                Tree-Nut-Free
+              </li>
+              <li>
+                Alcohol-Free
+              </li>
+            </ul>
+            <h3>
+              Calories
+            </h3>
+            <ul>
+              <li>
+                910
+              </li>
+            </ul>
+          </section>
+        </div>,
+        <div
+          className="ingredient-overview"
+        >
+          <h3>
+            Ingredients
+          </h3>
+          <p
+            className="ingredient"
+          >
+            One 10-ounce head radicchio
+          </p>
+          <p
+            className="ingredient"
+          >
+            2 tablespoons balsamic vinegar
+          </p>
+          <p
+            className="ingredient"
+          >
+            Salt and freshly ground pepper
+          </p>
+          <p
+            className="ingredient"
+          >
+            2 teaspoons chopped fresh oregano
+          </p>
+          <p
+            className="ingredient"
+          >
+            1/4 cup extra-virgin olive oil
+          </p>
+          <p
+            className="ingredient"
+          >
+            3/4 cup (3 ounces) finely grated fontina
+          </p>
+          <a
+            href="http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina"
+          >
+            Make it
+          </a>
+        </div>,
+        <div
+          className="review-section"
+        >
+          <Connect(ReviewForm)
+            label="Grilled Radicchio and Fontina"
+          />
+          <ReviewSection
+            currentReviews={Array []}
+          />
+        </div>,
+      ],
+      "className": "recipe-view-page",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Grilled Radicchio and Fontina",
+          "className": "recipe-label",
+        },
+        "ref": null,
+        "rendered": "Grilled Radicchio and Fontina",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              src="https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg"
+            />,
+            <section
+              className="nutrition-overview"
+            >
+              <h3>
+                Yields
+              </h3>
+              <ul>
+                <li>
+                  4
+                </li>
+              </ul>
+              <h3>
+                Diet & Health Labels
+              </h3>
+              <ul>
+                <li>
+                  Low-Carb
+                </li>
+                <li>
+                  Sugar-Conscious
+                </li>
+                <li>
+                  Vegetarian
+                </li>
+                <li>
+                  Peanut-Free
+                </li>
+                <li>
+                  Tree-Nut-Free
+                </li>
+                <li>
+                  Alcohol-Free
+                </li>
+              </ul>
+              <h3>
+                Calories
+              </h3>
+              <ul>
+                <li>
+                  910
+                </li>
+              </ul>
+            </section>,
+          ],
+          "className": "recipe-overview",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": undefined,
+              "src": "https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Yields
+                </h3>,
+                <ul>
+                  <li>
+                    4
+                  </li>
+                </ul>,
+                <h3>
+                  Diet & Health Labels
+                </h3>,
+                <ul>
+                  <li>
+                    Low-Carb
+                  </li>
+                  <li>
+                    Sugar-Conscious
+                  </li>
+                  <li>
+                    Vegetarian
+                  </li>
+                  <li>
+                    Peanut-Free
+                  </li>
+                  <li>
+                    Tree-Nut-Free
+                  </li>
+                  <li>
+                    Alcohol-Free
+                  </li>
+                </ul>,
+                <h3>
+                  Calories
+                </h3>,
+                <ul>
+                  <li>
+                    910
+                  </li>
+                </ul>,
+              ],
+              "className": "nutrition-overview",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Yields",
+                },
+                "ref": null,
+                "rendered": "Yields",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <li>
+                    4
+                  </li>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 4,
+                  },
+                  "ref": null,
+                  "rendered": 4,
+                  "type": "li",
+                },
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Diet & Health Labels",
+                },
+                "ref": null,
+                "rendered": "Diet & Health Labels",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    Array [
+                      <li>
+                        Low-Carb
+                      </li>,
+                    ],
+                    Array [
+                      <li>
+                        Sugar-Conscious
+                      </li>,
+                      <li>
+                        Vegetarian
+                      </li>,
+                      <li>
+                        Peanut-Free
+                      </li>,
+                      <li>
+                        Tree-Nut-Free
+                      </li>,
+                      <li>
+                        Alcohol-Free
+                      </li>,
+                    ],
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "Low-Carb",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Low-Carb",
+                    },
+                    "ref": null,
+                    "rendered": "Low-Carb",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Sugar-Conscious",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sugar-Conscious",
+                    },
+                    "ref": null,
+                    "rendered": "Sugar-Conscious",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Vegetarian",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Vegetarian",
+                    },
+                    "ref": null,
+                    "rendered": "Vegetarian",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Peanut-Free",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Peanut-Free",
+                    },
+                    "ref": null,
+                    "rendered": "Peanut-Free",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Tree-Nut-Free",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Tree-Nut-Free",
+                    },
+                    "ref": null,
+                    "rendered": "Tree-Nut-Free",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Alcohol-Free",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Alcohol-Free",
+                    },
+                    "ref": null,
+                    "rendered": "Alcohol-Free",
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Calories",
+                },
+                "ref": null,
+                "rendered": "Calories",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <li>
+                    910
+                  </li>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 910,
+                  },
+                  "ref": null,
+                  "rendered": 910,
+                  "type": "li",
+                },
+                "type": "ul",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Ingredients
+            </h3>,
+            Array [
+              <p
+                className="ingredient"
+              >
+                One 10-ounce head radicchio
+              </p>,
+              <p
+                className="ingredient"
+              >
+                2 tablespoons balsamic vinegar
+              </p>,
+              <p
+                className="ingredient"
+              >
+                Salt and freshly ground pepper
+              </p>,
+              <p
+                className="ingredient"
+              >
+                2 teaspoons chopped fresh oregano
+              </p>,
+              <p
+                className="ingredient"
+              >
+                1/4 cup extra-virgin olive oil
+              </p>,
+              <p
+                className="ingredient"
+              >
+                3/4 cup (3 ounces) finely grated fontina
+              </p>,
+            ],
+            <a
+              href="http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina"
+            >
+              Make it
+            </a>,
+          ],
+          "className": "ingredient-overview",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Ingredients",
+            },
+            "ref": null,
+            "rendered": "Ingredients",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": "One 10-ounce head radicchio",
+            "nodeType": "host",
+            "props": Object {
+              "children": "One 10-ounce head radicchio",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "One 10-ounce head radicchio",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "2 tablespoons balsamic vinegar",
+            "nodeType": "host",
+            "props": Object {
+              "children": "2 tablespoons balsamic vinegar",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "2 tablespoons balsamic vinegar",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "Salt and freshly ground pepper",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Salt and freshly ground pepper",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "Salt and freshly ground pepper",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "2 teaspoons chopped fresh oregano",
+            "nodeType": "host",
+            "props": Object {
+              "children": "2 teaspoons chopped fresh oregano",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "2 teaspoons chopped fresh oregano",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "1/4 cup extra-virgin olive oil",
+            "nodeType": "host",
+            "props": Object {
+              "children": "1/4 cup extra-virgin olive oil",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "1/4 cup extra-virgin olive oil",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "3/4 cup (3 ounces) finely grated fontina",
+            "nodeType": "host",
+            "props": Object {
+              "children": "3/4 cup (3 ounces) finely grated fontina",
+              "className": "ingredient",
+            },
+            "ref": null,
+            "rendered": "3/4 cup (3 ounces) finely grated fontina",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Make it",
+              "href": "http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina",
+            },
+            "ref": null,
+            "rendered": "Make it",
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Connect(ReviewForm)
+              label="Grilled Radicchio and Fontina"
+            />,
+            <ReviewSection
+              currentReviews={Array []}
+            />,
+          ],
+          "className": "review-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "label": "Grilled Radicchio and Fontina",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentReviews": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header />,
+          <h1
+            className="recipe-label"
+          >
+            Grilled Radicchio and Fontina
+          </h1>,
+          <div
+            className="recipe-overview"
+          >
+            <img
+              src="https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg"
+            />
+            <section
+              className="nutrition-overview"
+            >
+              <h3>
+                Yields
+              </h3>
+              <ul>
+                <li>
+                  4
+                </li>
+              </ul>
+              <h3>
+                Diet & Health Labels
+              </h3>
+              <ul>
+                <li>
+                  Low-Carb
+                </li>
+                <li>
+                  Sugar-Conscious
+                </li>
+                <li>
+                  Vegetarian
+                </li>
+                <li>
+                  Peanut-Free
+                </li>
+                <li>
+                  Tree-Nut-Free
+                </li>
+                <li>
+                  Alcohol-Free
+                </li>
+              </ul>
+              <h3>
+                Calories
+              </h3>
+              <ul>
+                <li>
+                  910
+                </li>
+              </ul>
+            </section>
+          </div>,
+          <div
+            className="ingredient-overview"
+          >
+            <h3>
+              Ingredients
+            </h3>
+            <p
+              className="ingredient"
+            >
+              One 10-ounce head radicchio
+            </p>
+            <p
+              className="ingredient"
+            >
+              2 tablespoons balsamic vinegar
+            </p>
+            <p
+              className="ingredient"
+            >
+              Salt and freshly ground pepper
+            </p>
+            <p
+              className="ingredient"
+            >
+              2 teaspoons chopped fresh oregano
+            </p>
+            <p
+              className="ingredient"
+            >
+              1/4 cup extra-virgin olive oil
+            </p>
+            <p
+              className="ingredient"
+            >
+              3/4 cup (3 ounces) finely grated fontina
+            </p>
+            <a
+              href="http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina"
+            >
+              Make it
+            </a>
+          </div>,
+          <div
+            className="review-section"
+          >
+            <Connect(ReviewForm)
+              label="Grilled Radicchio and Fontina"
+            />
+            <ReviewSection
+              currentReviews={Array []}
+            />
+          </div>,
+        ],
+        "className": "recipe-view-page",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Grilled Radicchio and Fontina",
+            "className": "recipe-label",
+          },
+          "ref": null,
+          "rendered": "Grilled Radicchio and Fontina",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                src="https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg"
+              />,
+              <section
+                className="nutrition-overview"
+              >
+                <h3>
+                  Yields
+                </h3>
+                <ul>
+                  <li>
+                    4
+                  </li>
+                </ul>
+                <h3>
+                  Diet & Health Labels
+                </h3>
+                <ul>
+                  <li>
+                    Low-Carb
+                  </li>
+                  <li>
+                    Sugar-Conscious
+                  </li>
+                  <li>
+                    Vegetarian
+                  </li>
+                  <li>
+                    Peanut-Free
+                  </li>
+                  <li>
+                    Tree-Nut-Free
+                  </li>
+                  <li>
+                    Alcohol-Free
+                  </li>
+                </ul>
+                <h3>
+                  Calories
+                </h3>
+                <ul>
+                  <li>
+                    910
+                  </li>
+                </ul>
+              </section>,
+            ],
+            "className": "recipe-overview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": undefined,
+                "src": "https://www.edamam.com/web-img/f37/f37bd3a564906b0fd489efc3bcde1dad.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    Yields
+                  </h3>,
+                  <ul>
+                    <li>
+                      4
+                    </li>
+                  </ul>,
+                  <h3>
+                    Diet & Health Labels
+                  </h3>,
+                  <ul>
+                    <li>
+                      Low-Carb
+                    </li>
+                    <li>
+                      Sugar-Conscious
+                    </li>
+                    <li>
+                      Vegetarian
+                    </li>
+                    <li>
+                      Peanut-Free
+                    </li>
+                    <li>
+                      Tree-Nut-Free
+                    </li>
+                    <li>
+                      Alcohol-Free
+                    </li>
+                  </ul>,
+                  <h3>
+                    Calories
+                  </h3>,
+                  <ul>
+                    <li>
+                      910
+                    </li>
+                  </ul>,
+                ],
+                "className": "nutrition-overview",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Yields",
+                  },
+                  "ref": null,
+                  "rendered": "Yields",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <li>
+                      4
+                    </li>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 4,
+                    },
+                    "ref": null,
+                    "rendered": 4,
+                    "type": "li",
+                  },
+                  "type": "ul",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Diet & Health Labels",
+                  },
+                  "ref": null,
+                  "rendered": "Diet & Health Labels",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      Array [
+                        <li>
+                          Low-Carb
+                        </li>,
+                      ],
+                      Array [
+                        <li>
+                          Sugar-Conscious
+                        </li>,
+                        <li>
+                          Vegetarian
+                        </li>,
+                        <li>
+                          Peanut-Free
+                        </li>,
+                        <li>
+                          Tree-Nut-Free
+                        </li>,
+                        <li>
+                          Alcohol-Free
+                        </li>,
+                      ],
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "Low-Carb",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Low-Carb",
+                      },
+                      "ref": null,
+                      "rendered": "Low-Carb",
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Sugar-Conscious",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sugar-Conscious",
+                      },
+                      "ref": null,
+                      "rendered": "Sugar-Conscious",
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Vegetarian",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Vegetarian",
+                      },
+                      "ref": null,
+                      "rendered": "Vegetarian",
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Peanut-Free",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Peanut-Free",
+                      },
+                      "ref": null,
+                      "rendered": "Peanut-Free",
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Tree-Nut-Free",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Tree-Nut-Free",
+                      },
+                      "ref": null,
+                      "rendered": "Tree-Nut-Free",
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Alcohol-Free",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Alcohol-Free",
+                      },
+                      "ref": null,
+                      "rendered": "Alcohol-Free",
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Calories",
+                  },
+                  "ref": null,
+                  "rendered": "Calories",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <li>
+                      910
+                    </li>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 910,
+                    },
+                    "ref": null,
+                    "rendered": 910,
+                    "type": "li",
+                  },
+                  "type": "ul",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Ingredients
+              </h3>,
+              Array [
+                <p
+                  className="ingredient"
+                >
+                  One 10-ounce head radicchio
+                </p>,
+                <p
+                  className="ingredient"
+                >
+                  2 tablespoons balsamic vinegar
+                </p>,
+                <p
+                  className="ingredient"
+                >
+                  Salt and freshly ground pepper
+                </p>,
+                <p
+                  className="ingredient"
+                >
+                  2 teaspoons chopped fresh oregano
+                </p>,
+                <p
+                  className="ingredient"
+                >
+                  1/4 cup extra-virgin olive oil
+                </p>,
+                <p
+                  className="ingredient"
+                >
+                  3/4 cup (3 ounces) finely grated fontina
+                </p>,
+              ],
+              <a
+                href="http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina"
+              >
+                Make it
+              </a>,
+            ],
+            "className": "ingredient-overview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ingredients",
+              },
+              "ref": null,
+              "rendered": "Ingredients",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": "One 10-ounce head radicchio",
+              "nodeType": "host",
+              "props": Object {
+                "children": "One 10-ounce head radicchio",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "One 10-ounce head radicchio",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "2 tablespoons balsamic vinegar",
+              "nodeType": "host",
+              "props": Object {
+                "children": "2 tablespoons balsamic vinegar",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "2 tablespoons balsamic vinegar",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "Salt and freshly ground pepper",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Salt and freshly ground pepper",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "Salt and freshly ground pepper",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "2 teaspoons chopped fresh oregano",
+              "nodeType": "host",
+              "props": Object {
+                "children": "2 teaspoons chopped fresh oregano",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "2 teaspoons chopped fresh oregano",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "1/4 cup extra-virgin olive oil",
+              "nodeType": "host",
+              "props": Object {
+                "children": "1/4 cup extra-virgin olive oil",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "1/4 cup extra-virgin olive oil",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "3/4 cup (3 ounces) finely grated fontina",
+              "nodeType": "host",
+              "props": Object {
+                "children": "3/4 cup (3 ounces) finely grated fontina",
+                "className": "ingredient",
+              },
+              "ref": null,
+              "rendered": "3/4 cup (3 ounces) finely grated fontina",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Make it",
+                "href": "http://www.marthastewart.com/1143762/grilled-radicchio-and-fontina",
+              },
+              "ref": null,
+              "rendered": "Make it",
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Connect(ReviewForm)
+                label="Grilled Radicchio and Fontina"
+              />,
+              <ReviewSection
+                currentReviews={Array []}
+              />,
+            ],
+            "className": "review-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "label": "Grilled Radicchio and Fontina",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentReviews": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

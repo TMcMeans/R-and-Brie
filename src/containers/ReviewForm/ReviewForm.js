@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import { addReview } from '../../actions/index'
-import PropTypes from 'prop-types'
 
 export class ReviewForm extends Component {
   constructor(props) {

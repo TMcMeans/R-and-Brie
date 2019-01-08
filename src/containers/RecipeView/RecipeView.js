@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import ReviewForm from '../ReviewForm/ReviewForm';
 import { Header } from '../Header/Header'
 import { ReviewSection } from '../../components/ReviewSection/ReviewSection'
+
 
 export const RecipeView = props => {
   const {
@@ -18,22 +20,23 @@ export const RecipeView = props => {
     yields,
     reviews
   } = props;
-
-  const cleanLabel = label.replace('recipes', '');
+  let cleanLabel;
+  if (label.includes('recipes')) {
+    cleanLabel = label.replace('recipes', '');
+  }
   const dietLabelInfo = dietLabels.map(label => {
-    return <li>{label}</li>;
+    return <li key={label}>{label}</li>;
   });
 
   const healthLabelInfo = healthLabels.map(label => {
-    return <li>{label}</li>;
+    return <li key={label}>{label}</li>;
   });
 
   const ingredientList = ingredientLines.map((ingredient, i, array) => {
-    return <p className="ingredient">{ingredient}</p>;
+    return <p className="ingredient" key={ingredient}>{ingredient}</p>;
   });
 
   const currentReviews = reviews.filter(review => review.label === label)
-  console.log(currentReviews)
   return (
     < div className="recipe-view-page" >
       <Header />
@@ -71,8 +74,12 @@ export const RecipeView = props => {
 };
 
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   reviews: state.reviews
 })
 
 export default connect(mapStateToProps)(RecipeView);
+
+RecipeView.propTypes = {
+  reviews: PropTypes.array.isRequired
+}
