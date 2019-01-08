@@ -10,7 +10,7 @@ import { Header } from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
 import { Welcome } from '../../components/Welcome/Welcome';
-import { RecipeView } from '../RecipeView/RecipeView';
+import RecipeView from '../RecipeView/RecipeView';
 import { Error } from '../Error/Error'
 
 class App extends Component {

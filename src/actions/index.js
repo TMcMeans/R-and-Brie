@@ -12,3 +12,8 @@ export const isLoading = bool => ({
   type: 'IS_LOADING',
   isLoading: bool
 });
+
+export const addReview = (review) => ({
+  type: 'ADD_REVIEW',
+  review: review
+})
