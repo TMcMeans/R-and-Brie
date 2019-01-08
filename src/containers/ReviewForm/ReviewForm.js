@@ -3,8 +3,9 @@ import StarRatingComponent from 'react-star-rating-component';
 import { connect } from 'react-redux'
 
 import { addReview } from '../../actions/index'
+import PropTypes from 'prop-types'
 
-class ReviewForm extends Component {
+export class ReviewForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,6 +53,7 @@ class ReviewForm extends Component {
             onStarClick={this.onStarClick}
             starColor={`#ffb400`}
             emptyStarColor={`#000`}
+            className="star-ratings"
           />
           <input type="submit" />
         </form>
@@ -60,12 +62,17 @@ class ReviewForm extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   reviews: state.reviews
 })
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   addReview: (review) => dispatch(addReview(review))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ReviewForm);
+
+ReviewForm.propTypes = {
+  reviews: PropTypes.array.isRequired,
+  addReview: PropTypes.func.isRequired
+}
