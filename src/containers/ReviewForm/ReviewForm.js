@@ -10,7 +10,8 @@ class ReviewForm extends Component {
     this.state = {
       caption: '',
       rating: 0,
-      label: ''
+      label: '',
+      name: ''
     };
   }
 
@@ -22,7 +23,8 @@ class ReviewForm extends Component {
     const { name, value } = e.target
     this.setState({
       [name]: value,
-      label: this.props.label
+      label: this.props.label,
+      date: new Date()
     })
   }
 
@@ -40,6 +42,7 @@ class ReviewForm extends Component {
     return (
       <div className="review">
         <form onSubmit={this.handleSubmit}>
+          <input type="text" placeholder="Enter your name" name="name" value={this.state.name} onChange={this.handleChange} />
           <input type="text" placeholder="Add a comment..." name="caption" value={this.state.caption} onChange={this.handleChange} />
           <h2>Rating from state: {rating}</h2>
           <StarRatingComponent

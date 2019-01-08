@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 import ReviewForm from '../ReviewForm/ReviewForm';
 import { Header } from '../Header/Header'
+import { ReviewSection } from '../../components/ReviewSection/ReviewSection'
 
 export const RecipeView = props => {
   const {
@@ -13,7 +15,8 @@ export const RecipeView = props => {
     label,
     source,
     url,
-    yields
+    yields,
+    reviews
   } = props;
 
   const cleanLabel = label.replace('recipes', '');
@@ -29,8 +32,10 @@ export const RecipeView = props => {
     return <p className="ingredient">{ingredient}</p>;
   });
 
+  const currentReviews = reviews.filter(review => review.label === label)
+  console.log(currentReviews)
   return (
-    <div className="recipe-view-page">
+    < div className="recipe-view-page" >
       <Header />
       <h1 className="recipe-label">{props.label}</h1>
       <div className="recipe-overview">
@@ -59,7 +64,15 @@ export const RecipeView = props => {
 
       <div className="review-section">
         <ReviewForm label={label} />
+        <ReviewSection currentReviews={currentReviews} />
       </div>
-    </div>
+    </div >
   );
 };
+
+
+const mapStateToProps = (state) => ({
+  reviews: state.reviews
+})
+
+export default connect(mapStateToProps)(RecipeView);
