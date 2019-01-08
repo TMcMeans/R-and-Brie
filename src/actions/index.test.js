@@ -38,4 +38,15 @@ describe('actions', () => {
     const result = actions.isLoading(mockBool);
     expect(result).toEqual(expectedAction);
   });
+  it('addReview should have a type of ADD_REVIEW', () => {
+    const mockReview = { label: 'Baked brie', rating: 4, caption: 'Tastes great!' }
+
+    const expectedAction = {
+      type: 'ADD_REVIEW',
+      review: mockReview
+    }
+
+    const result = actions.addReview(mockReview)
+    expect(result).toEqual(expectedAction)
+  })
 });
