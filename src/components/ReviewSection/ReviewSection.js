@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const ReviewSection = ({ currentReviews }) => {
   let reviews;
@@ -19,4 +20,7 @@ export const ReviewSection = ({ currentReviews }) => {
   )
 }
 
+ReviewSection.propTypes = {
+  currentReviews: PropTypes.array.isRequired
+}
 
