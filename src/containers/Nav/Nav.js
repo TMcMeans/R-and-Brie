@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types'
 import { app_key, app_id } from '../../apikey';
 
 import * as Helper from '../../helper/helper';
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions/index';
 
-class Nav extends Component {
+export class Nav extends Component {
 
   updateRecipes = async (label) => {
     const { fetchRecipes, addRecipes } = this.props;
     let url;
     let recipes;
     recipes = Helper.getFromLocalStorage(label);
-    // console.log(`${label}: ${recipes}`)
     if (!recipes) {
       url = `https://api.edamam.com/search?app_id=${app_id}&app_key=${app_key}&q=${label}`;
       await fetchRecipes(label, url);
@@ -91,12 +91,12 @@ class Nav extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   recipes: state.recipes,
   isLoading: state.isLoading
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   fetchRecipes: (label, url) => dispatch(fetchRecipes(label, url)),
   addRecipes: recipes => dispatch(addRecipes(recipes))
 });
@@ -105,3 +105,10 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Nav);
+
+Nav.propTypes = {
+  recipes: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  fetchRecipes: PropTypes.func.isRequired,
+  addRecipes: PropTypes.func.isRequired
+}
