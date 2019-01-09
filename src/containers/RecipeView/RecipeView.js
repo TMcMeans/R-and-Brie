@@ -60,12 +60,14 @@ export const RecipeView = props => {
         </section>
       </div>
       <div className="ingredient-overview">
-        <h3>Ingredients</h3>
+        <h3 className="ingredients-title">Ingredients</h3>
         {ingredientList}
         <a href={url} target="_blank" className="recipe-link">Make it</a>
       </div>
 
       <div className="review-section">
+        <h1>Conversation</h1>
+        <hr />
         <ReviewForm label={label} />
         <ReviewSection currentReviews={currentReviews} />
       </div>
