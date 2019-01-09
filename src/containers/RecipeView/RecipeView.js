@@ -68,8 +68,10 @@ export const RecipeView = props => {
       <div className="review-section">
         <h1>Conversation</h1>
         <hr />
-        <ReviewForm label={label} />
-        <ReviewSection currentReviews={currentReviews} />
+        <div className="reviews-wrapper">
+          <ReviewForm label={label} />
+          <ReviewSection currentReviews={currentReviews} />
+        </div>
       </div>
     </div >
   );

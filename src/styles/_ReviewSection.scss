@@ -1,0 +1,56 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 50%;
+  form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid$mainFontColor;
+  // background: lightgrey;
+  }
+  input {
+    // background: lightgrey;
+    height: 50px;
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+  }
+  .star-ratings {
+   font-size: 1em;
+   margin: 0 auto;
+   i {
+     font-size: 2em;
+     text-align: center;
+   }
+  }
+  .submit-btn {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0px;
+    font-family: 'Playfair Display', serif;
+    background: $mainFontColor;
+    color: $mainAccentColor;
+    font-size: 1.5em;
+  }
+  .reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+  .review-section-area {
+      width: 100%;
+      font-family: 'Playfair Display', serif;
+      color: $mainFontColor;
+      margin-left: 50px;
+   .name {
+        font-size: 0.8em;
+      }
+   .current-review {
+     font-size: 1em;
+   } 
+   hr {
+     width: 100%
+   }
+}
