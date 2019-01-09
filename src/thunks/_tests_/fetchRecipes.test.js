@@ -1,7 +1,6 @@
 import { fetchRecipes } from '../fetchRecipes';
 import { addRecipes, hasErrored, isLoading } from '../../actions';
 import { cleanRecipeData, sendToLocalStorage } from '../../helper/helper'
-import { send } from 'q';
 
 describe('fetchRecipes', () => {
   let mockUrl;
@@ -1373,36 +1372,9 @@ describe('fetchRecipes', () => {
       })
     );
 
-    const mockCleanRecipes = [
-      {
-        calories: 852,
-        dietLabels: ['Low-Carb'],
-        healthLabels: [
-          'Sugar-Conscious',
-          'Vegetarian',
-          'Peanut-Free',
-          'Tree-Nut-Free',
-          'Alcohol-Free'
-        ],
-        image:
-          'https://www.edamam.com/web-img/1ad/1adb325f2db4c38149b79c8870820ff0.jpg',
-        ingredientLines: [
-          'butter',
-          '½ garlic clove , crushed',
-          '6 thick slices of brie',
-          '100.0g young leaf spinach , washed',
-          '2 croissants , slit open lengthways'
-        ],
-        label: 'Brie & Spinach Croissants',
-        source: 'BBC Good Food',
-        url: 'http://www.bbcgoodfood.com/recipes/4324/',
-        yields: 2
-      }
-    ];
-
     const thunk = fetchRecipes(mockUrl);
     await thunk(mockDispatch);
-    expect(mockDispatch).toHaveBeenCalledWith(cleanRecipeData(mockUncleanRecipes));
+    expect(cleanRecipeData).toHaveBeenCalledWith(mockUncleanRecipes);
 
   })
 

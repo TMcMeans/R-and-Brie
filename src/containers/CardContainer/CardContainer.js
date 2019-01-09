@@ -9,8 +9,7 @@ import { Error } from '../../components/Error/Error'
 class CardContainer extends Component {
 
   render() {
-    const { label, isLoading, recipes, history } = this.props
-    // console.log(history.location.pathname)
+    const { label, isLoading, recipes } = this.props
     const recipeCards = recipes.map(recipe => {
       return <Card recipe={recipe} key={recipe.label} />;
     });
@@ -27,11 +26,6 @@ class CardContainer extends Component {
 const mapStateToProps = state => ({
   recipes: state.recipes,
   isLoading: state.isLoading
-});
-
-const mapDispatchToProps = dispatch => ({
-  fetchRecipes: (label, url) => dispatch(fetchRecipes(label, url)),
-  addRecipes: recipes => dispatch(addRecipes(recipes))
 });
 
 export default connect(
