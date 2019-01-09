@@ -3,10 +3,7 @@ import { connect } from 'react-redux';
 import { Switch, Route, withRouter } from 'react-router';
 import PropTypes from 'prop-types'
 
-import { fetchRecipes } from '../../thunks/fetchRecipes';
-import { addRecipes } from '../../actions';
 import '../../styles/main.scss';
-
 import { Header } from '../../components/Header/Header'
 import CardContainer from '../CardContainer/CardContainer';
 import Nav from '../Nav/Nav';
@@ -72,5 +69,5 @@ export default withRouter(
 );
 
 App.propTypes = {
-  recipes: PropTypes.array.isRequired
+  recipes: PropTypes.array
 }
