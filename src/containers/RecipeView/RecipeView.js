@@ -42,9 +42,9 @@ export const RecipeView = props => {
       <Header />
       <h1 className="recipe-label">{props.label}</h1>
       <div className="recipe-overview">
-        <img src={image} alt={cleanLabel} />
+        <img src={image} alt={cleanLabel} className="recipe-img" />
         <section className="nutrition-overview">
-          <h3>Yields</h3>
+          <h3 className="yields">Yields</h3>
           <ul>
             <li>{yields}</li>
           </ul>
@@ -62,7 +62,7 @@ export const RecipeView = props => {
       <div className="ingredient-overview">
         <h3>Ingredients</h3>
         {ingredientList}
-        <a href={url}>Make it</a>
+        <a href={url} target="_blank" className="recipe-link">Make it</a>
       </div>
 
       <div className="review-section">

@@ -1,0 +1,39 @@
+.recipe-view-page {
+  .recipe-label {
+    width: 100%;
+    background: $mainFontColor;
+    color: $mainAccentColor;
+    text-align: center;
+    padding: 5px 0 5px 0;
+  }
+  .recipe-img {
+    width: 350px;
+    display:block; 
+    height: auto;
+    margin: 0 auto;
+  }
+  .nutrition-overview {
+    display: flex;
+    flex-direction: column;
+    background: $mainFontColor;
+    color: $mainAccentColor;
+    width: 50%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    ul {
+      list-style-type: none;
+      margin-right: 30px;
+      font-size: 1.3em;
+    }
+    h3 {
+      font-size: 1.6em;
+      margin: 0;
+    }
+    .yields {
+      margin-top: 10px;
+    }
+  }
+  .ingredient-overview {
+    border: 2px solid red
+  }
+}
