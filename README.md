@@ -38,7 +38,7 @@ Tanj McMeans- [Github](https://github.com/TMcMeans)
 - REST API
 - HTML5
 - SCSS
-- Git Rebase Workflow
+- Git 
 - Github
 
 ### Original Wireframe
