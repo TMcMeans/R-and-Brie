@@ -44,7 +44,7 @@ export class Nav extends Component {
           </div>
           Feta
         </Link>
-        <Link className="nav-item" to={`/type/swiss`} onClick={() => { this.updateRecipes('swiss') }}>
+        <Link className="nav-item" to={`/type/swiss%20cheese`} onClick={() => { this.updateRecipes('swiss cheese') }}>
           <div className="cheese">
             <img src="swiss.png" alt="" id="swiss" className="cheese-img" />
           </div>

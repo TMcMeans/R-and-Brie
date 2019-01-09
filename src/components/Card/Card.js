@@ -11,7 +11,7 @@ export const Card = props => {
   };
 
   return (
-    <Link to={`/recipes/${label}`}>
+    <Link to={`/recipes/${label}`} className="card-style">
       <div className="card" style={backgroundImage}>
         {/* <div className="fav-icon">
           <i className="fas fa-heart" />
