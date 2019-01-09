@@ -17,30 +17,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <Link
+      "children": <Link
+        className="title"
+        replace={false}
+        to="/home"
+      >
+        R&Brie
+      </Link>,
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "R&Brie",
+        "className": "title",
+        "replace": false,
+        "to": "/home",
+      },
+      "ref": null,
+      "rendered": "R&Brie",
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Link
           className="title"
           replace={false}
           to="/home"
         >
           R&Brie
         </Link>,
-        <h1
-          className="favs"
-        >
-          Favs 
-          <span
-            className="total-favs"
-          >
-            0
-          </span>
-        </h1>,
-      ],
-      "className": "header",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
@@ -54,119 +73,6 @@ ShallowWrapper {
         "rendered": "R&Brie",
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Favs ",
-            <span
-              className="total-favs"
-            >
-              0
-            </span>,
-          ],
-          "className": "favs",
-        },
-        "ref": null,
-        "rendered": Array [
-          "Favs ",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "0",
-              "className": "total-favs",
-            },
-            "ref": null,
-            "rendered": "0",
-            "type": "span",
-          },
-        ],
-        "type": "h1",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Link
-            className="title"
-            replace={false}
-            to="/home"
-          >
-            R&Brie
-          </Link>,
-          <h1
-            className="favs"
-          >
-            Favs 
-            <span
-              className="total-favs"
-            >
-              0
-            </span>
-          </h1>,
-        ],
-        "className": "header",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "R&Brie",
-            "className": "title",
-            "replace": false,
-            "to": "/home",
-          },
-          "ref": null,
-          "rendered": "R&Brie",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Favs ",
-              <span
-                className="total-favs"
-              >
-                0
-              </span>,
-            ],
-            "className": "favs",
-          },
-          "ref": null,
-          "rendered": Array [
-            "Favs ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "0",
-                "className": "total-favs",
-              },
-              "ref": null,
-              "rendered": "0",
-              "type": "span",
-            },
-          ],
-          "type": "h1",
-        },
-      ],
       "type": "div",
     },
   ],
