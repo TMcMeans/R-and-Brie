@@ -31,16 +31,16 @@ Tanj McMeans- [Github](https://github.com/TMcMeans)
 
 ### Original Wireframe
 
-![welcome-screen](assets/welcomescreen.png)
+![welcome-screen](/public/assets/welcomescreen.png)
 
-![desktop-view](assets/desktopview.png)
+![desktop-view](/public/assets/desktopview.png)
 
-![selecting-cheese](assets/selectingcheese.png)
+![selecting-cheese](/public/assets/selectingcheese.png)
 
-![single-recipe-view](assets/singleRecipeView.png)
+![single-recipe-view](/public/assets/singleRecipeView.png)
 
-![choosing-favorites](assets/showfavs.png)
+![choosing-favorites](/public/assets/showfavs.png)
 
-![mobile-view](assets/mobileview.png)
+![mobile-view](/public/assets/mobileview.png)
 
 ### Implementation

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { Card } from '../../components/Card/Card';
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions/index';
 import { Error } from '../../components/Error/Error'
 
-class CardContainer extends Component {
+export class CardContainer extends Component {
 
   render() {
     const { label, isLoading, recipes } = this.props
@@ -23,7 +24,7 @@ class CardContainer extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   recipes: state.recipes,
   isLoading: state.isLoading
 });
@@ -31,3 +32,8 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps
 )(CardContainer);
+
+CardContainer.propTypes = {
+  recipes: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired
+}

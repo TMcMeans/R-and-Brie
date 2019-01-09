@@ -34,8 +34,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="brie"
-              src=""
+              src="brie.png"
             />
           </div>
           Brie
@@ -51,8 +52,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="parmesean"
-              src=""
+              src="parmesan.png"
             />
           </div>
           Parmesan
@@ -68,8 +70,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="feta"
-              src=""
+              src="feta.png"
             />
           </div>
           Feta
@@ -85,8 +88,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="swiss"
-              src=""
+              src="swiss.png"
             />
           </div>
           Swiss
@@ -102,8 +106,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="mozzarella"
-              src=""
+              src="mozzarella.png"
             />
           </div>
           Mozzarella
@@ -119,8 +124,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="cheddar"
-              src=""
+              src="cheddar.png"
             />
           </div>
           Cheddar
@@ -136,8 +142,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="bluecheese"
-              src=""
+              src="blue.png"
             />
           </div>
           Blue
@@ -153,8 +160,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="asiago"
-              src=""
+              src="asiago.png"
             />
           </div>
           Asiago
@@ -170,8 +178,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="fontina"
-              src=""
+              src="fontina.png"
             />
           </div>
           Fontina
@@ -187,8 +196,9 @@ ShallowWrapper {
           >
             <img
               alt=""
+              className="cheese-img"
               id="american"
-              src=""
+              src="american.png"
             />
           </div>
           American
@@ -209,8 +219,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="brie"
-                src=""
+                src="brie.png"
               />
             </div>,
             "Brie",
@@ -229,8 +240,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="brie"
-                src=""
+                src="brie.png"
               />,
               "className": "cheese",
             },
@@ -241,8 +253,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "brie",
-                "src": "",
+                "src": "brie.png",
               },
               "ref": null,
               "rendered": null,
@@ -265,8 +278,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="parmesean"
-                src=""
+                src="parmesan.png"
               />
             </div>,
             "Parmesan",
@@ -285,8 +299,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="parmesean"
-                src=""
+                src="parmesan.png"
               />,
               "className": "cheese",
             },
@@ -297,8 +312,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "parmesean",
-                "src": "",
+                "src": "parmesan.png",
               },
               "ref": null,
               "rendered": null,
@@ -321,8 +337,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="feta"
-                src=""
+                src="feta.png"
               />
             </div>,
             "Feta",
@@ -341,8 +358,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="feta"
-                src=""
+                src="feta.png"
               />,
               "className": "cheese",
             },
@@ -353,8 +371,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "feta",
-                "src": "",
+                "src": "feta.png",
               },
               "ref": null,
               "rendered": null,
@@ -377,8 +396,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="swiss"
-                src=""
+                src="swiss.png"
               />
             </div>,
             "Swiss",
@@ -397,8 +417,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="swiss"
-                src=""
+                src="swiss.png"
               />,
               "className": "cheese",
             },
@@ -409,8 +430,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "swiss",
-                "src": "",
+                "src": "swiss.png",
               },
               "ref": null,
               "rendered": null,
@@ -433,8 +455,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="mozzarella"
-                src=""
+                src="mozzarella.png"
               />
             </div>,
             "Mozzarella",
@@ -453,8 +476,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="mozzarella"
-                src=""
+                src="mozzarella.png"
               />,
               "className": "cheese",
             },
@@ -465,8 +489,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "mozzarella",
-                "src": "",
+                "src": "mozzarella.png",
               },
               "ref": null,
               "rendered": null,
@@ -489,8 +514,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="cheddar"
-                src=""
+                src="cheddar.png"
               />
             </div>,
             "Cheddar",
@@ -509,8 +535,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="cheddar"
-                src=""
+                src="cheddar.png"
               />,
               "className": "cheese",
             },
@@ -521,8 +548,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "cheddar",
-                "src": "",
+                "src": "cheddar.png",
               },
               "ref": null,
               "rendered": null,
@@ -545,8 +573,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="bluecheese"
-                src=""
+                src="blue.png"
               />
             </div>,
             "Blue",
@@ -565,8 +594,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="bluecheese"
-                src=""
+                src="blue.png"
               />,
               "className": "cheese",
             },
@@ -577,8 +607,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "bluecheese",
-                "src": "",
+                "src": "blue.png",
               },
               "ref": null,
               "rendered": null,
@@ -601,8 +632,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="asiago"
-                src=""
+                src="asiago.png"
               />
             </div>,
             "Asiago",
@@ -621,8 +653,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="asiago"
-                src=""
+                src="asiago.png"
               />,
               "className": "cheese",
             },
@@ -633,8 +666,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "asiago",
-                "src": "",
+                "src": "asiago.png",
               },
               "ref": null,
               "rendered": null,
@@ -657,8 +691,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="fontina"
-                src=""
+                src="fontina.png"
               />
             </div>,
             "Fontina",
@@ -677,8 +712,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="fontina"
-                src=""
+                src="fontina.png"
               />,
               "className": "cheese",
             },
@@ -689,8 +725,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "fontina",
-                "src": "",
+                "src": "fontina.png",
               },
               "ref": null,
               "rendered": null,
@@ -713,8 +750,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="american"
-                src=""
+                src="american.png"
               />
             </div>,
             "American",
@@ -733,8 +771,9 @@ ShallowWrapper {
             "props": Object {
               "children": <img
                 alt=""
+                className="cheese-img"
                 id="american"
-                src=""
+                src="american.png"
               />,
               "className": "cheese",
             },
@@ -745,8 +784,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "",
+                "className": "cheese-img",
                 "id": "american",
-                "src": "",
+                "src": "american.png",
               },
               "ref": null,
               "rendered": null,
@@ -779,8 +819,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="brie"
-                src=""
+                src="brie.png"
               />
             </div>
             Brie
@@ -796,8 +837,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="parmesean"
-                src=""
+                src="parmesan.png"
               />
             </div>
             Parmesan
@@ -813,8 +855,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="feta"
-                src=""
+                src="feta.png"
               />
             </div>
             Feta
@@ -830,8 +873,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="swiss"
-                src=""
+                src="swiss.png"
               />
             </div>
             Swiss
@@ -847,8 +891,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="mozzarella"
-                src=""
+                src="mozzarella.png"
               />
             </div>
             Mozzarella
@@ -864,8 +909,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="cheddar"
-                src=""
+                src="cheddar.png"
               />
             </div>
             Cheddar
@@ -881,8 +927,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="bluecheese"
-                src=""
+                src="blue.png"
               />
             </div>
             Blue
@@ -898,8 +945,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="asiago"
-                src=""
+                src="asiago.png"
               />
             </div>
             Asiago
@@ -915,8 +963,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="fontina"
-                src=""
+                src="fontina.png"
               />
             </div>
             Fontina
@@ -932,8 +981,9 @@ ShallowWrapper {
             >
               <img
                 alt=""
+                className="cheese-img"
                 id="american"
-                src=""
+                src="american.png"
               />
             </div>
             American
@@ -954,8 +1004,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="brie"
-                  src=""
+                  src="brie.png"
                 />
               </div>,
               "Brie",
@@ -974,8 +1025,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="brie"
-                  src=""
+                  src="brie.png"
                 />,
                 "className": "cheese",
               },
@@ -986,8 +1038,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "brie",
-                  "src": "",
+                  "src": "brie.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1010,8 +1063,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="parmesean"
-                  src=""
+                  src="parmesan.png"
                 />
               </div>,
               "Parmesan",
@@ -1030,8 +1084,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="parmesean"
-                  src=""
+                  src="parmesan.png"
                 />,
                 "className": "cheese",
               },
@@ -1042,8 +1097,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "parmesean",
-                  "src": "",
+                  "src": "parmesan.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1066,8 +1122,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="feta"
-                  src=""
+                  src="feta.png"
                 />
               </div>,
               "Feta",
@@ -1086,8 +1143,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="feta"
-                  src=""
+                  src="feta.png"
                 />,
                 "className": "cheese",
               },
@@ -1098,8 +1156,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "feta",
-                  "src": "",
+                  "src": "feta.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1122,8 +1181,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="swiss"
-                  src=""
+                  src="swiss.png"
                 />
               </div>,
               "Swiss",
@@ -1142,8 +1202,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="swiss"
-                  src=""
+                  src="swiss.png"
                 />,
                 "className": "cheese",
               },
@@ -1154,8 +1215,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "swiss",
-                  "src": "",
+                  "src": "swiss.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1178,8 +1240,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="mozzarella"
-                  src=""
+                  src="mozzarella.png"
                 />
               </div>,
               "Mozzarella",
@@ -1198,8 +1261,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="mozzarella"
-                  src=""
+                  src="mozzarella.png"
                 />,
                 "className": "cheese",
               },
@@ -1210,8 +1274,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "mozzarella",
-                  "src": "",
+                  "src": "mozzarella.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1234,8 +1299,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="cheddar"
-                  src=""
+                  src="cheddar.png"
                 />
               </div>,
               "Cheddar",
@@ -1254,8 +1320,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="cheddar"
-                  src=""
+                  src="cheddar.png"
                 />,
                 "className": "cheese",
               },
@@ -1266,8 +1333,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "cheddar",
-                  "src": "",
+                  "src": "cheddar.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1290,8 +1358,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="bluecheese"
-                  src=""
+                  src="blue.png"
                 />
               </div>,
               "Blue",
@@ -1310,8 +1379,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="bluecheese"
-                  src=""
+                  src="blue.png"
                 />,
                 "className": "cheese",
               },
@@ -1322,8 +1392,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "bluecheese",
-                  "src": "",
+                  "src": "blue.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1346,8 +1417,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="asiago"
-                  src=""
+                  src="asiago.png"
                 />
               </div>,
               "Asiago",
@@ -1366,8 +1438,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="asiago"
-                  src=""
+                  src="asiago.png"
                 />,
                 "className": "cheese",
               },
@@ -1378,8 +1451,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "asiago",
-                  "src": "",
+                  "src": "asiago.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1402,8 +1476,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="fontina"
-                  src=""
+                  src="fontina.png"
                 />
               </div>,
               "Fontina",
@@ -1422,8 +1497,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="fontina"
-                  src=""
+                  src="fontina.png"
                 />,
                 "className": "cheese",
               },
@@ -1434,8 +1510,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "fontina",
-                  "src": "",
+                  "src": "fontina.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1458,8 +1535,9 @@ ShallowWrapper {
               >
                 <img
                   alt=""
+                  className="cheese-img"
                   id="american"
-                  src=""
+                  src="american.png"
                 />
               </div>,
               "American",
@@ -1478,8 +1556,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <img
                   alt=""
+                  className="cheese-img"
                   id="american"
-                  src=""
+                  src="american.png"
                 />,
                 "className": "cheese",
               },
@@ -1490,8 +1569,9 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "alt": "",
+                  "className": "cheese-img",
                   "id": "american",
-                  "src": "",
+                  "src": "american.png",
                 },
                 "ref": null,
                 "rendered": null,
