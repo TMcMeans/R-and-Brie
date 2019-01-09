@@ -6,9 +6,9 @@ export const Header = () => {
   return (
     <div className="header">
       <Link to="/home" className="title">R&amp;Brie</Link>
-      <h1 className="favs">
+      {/* <h1 className="favs">
         Favs <span className="total-favs">0</span>
-      </h1>
+      </h1> */}
     </div>
   );
 };

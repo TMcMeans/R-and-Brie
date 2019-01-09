@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome should match snapshot with all data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Welcome />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Welcome, fellow cheese lover!
+        </h1>,
+        <p>
+          This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.
+        </p>,
+        <p>
+          Enjoy, and bon apetit!
+        </p>,
+      ],
+      "className": "welcome",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Welcome, fellow cheese lover!",
+        },
+        "ref": null,
+        "rendered": "Welcome, fellow cheese lover!",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.",
+        },
+        "ref": null,
+        "rendered": "This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Enjoy, and bon apetit!",
+        },
+        "ref": null,
+        "rendered": "Enjoy, and bon apetit!",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Welcome, fellow cheese lover!
+          </h1>,
+          <p>
+            This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.
+          </p>,
+          <p>
+            Enjoy, and bon apetit!
+          </p>,
+        ],
+        "className": "welcome",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome, fellow cheese lover!",
+          },
+          "ref": null,
+          "rendered": "Welcome, fellow cheese lover!",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.",
+          },
+          "ref": null,
+          "rendered": "This app is designed to help you discover and favorite recipes by searching popular cheese types as the main ingredient. Select a cheese type at the top to view related recipes.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Enjoy, and bon apetit!",
+          },
+          "ref": null,
+          "rendered": "Enjoy, and bon apetit!",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

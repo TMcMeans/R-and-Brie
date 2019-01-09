@@ -28,61 +28,61 @@ export class Nav extends Component {
       <div className="nav">
         <Link className="nav-item" to={`/type/brie`} onClick={() => { this.updateRecipes('brie') }}>
           <div className="cheese">
-            <img src="" alt="" id="brie" />
+            <img src="brie.png" alt="" id="brie" className="cheese-img" />
           </div>
           Brie
         </Link>
         <Link className="nav-item" to={`/type/parmesean`} onClick={() => { this.updateRecipes('parmesean') }}>
           <div className="cheese">
-            <img src="" alt="" id="parmesean" />
+            <img src="parmesan.png" alt="" id="parmesean" className="cheese-img" />
           </div>
           Parmesan
         </Link>
         <Link className="nav-item" to={`/type/feta`} onClick={() => { this.updateRecipes('feta') }}>
           <div className="cheese">
-            <img src="" alt="" id="feta" />
+            <img src="feta.png" alt="" id="feta" className="cheese-img" />
           </div>
           Feta
         </Link>
         <Link className="nav-item" to={`/type/swiss`} onClick={() => { this.updateRecipes('swiss') }}>
           <div className="cheese">
-            <img src="" alt="" id="swiss" />
+            <img src="swiss.png" alt="" id="swiss" className="cheese-img" />
           </div>
           Swiss
         </Link>
         <Link className="nav-item" to={`/type/mozzarella`} onClick={() => { this.updateRecipes('mozzarella') }}>
           <div className="cheese">
-            <img src="" alt="" id="mozzarella" />
+            <img src="mozzarella.png" alt="" id="mozzarella" className="cheese-img" />
           </div>
           Mozzarella
         </Link>
         <Link className="nav-item" to={`/type/cheddar`} onClick={() => { this.updateRecipes('cheddar') }}>
           <div className="cheese">
-            <img src="" alt="" id="cheddar" />
+            <img src="cheddar.png" alt="" id="cheddar" className="cheese-img" />
           </div>
           Cheddar
         </Link>
         <Link className="nav-item" to={`/type/blue%20cheese`} onClick={() => { this.updateRecipes('blue cheese') }}>
           <div className="cheese">
-            <img src="" alt="" id="bluecheese" />
+            <img src="blue.png" alt="" id="bluecheese" className="cheese-img" />
           </div>
           Blue
         </Link>
         <Link className="nav-item" to={`/type/asiago`} onClick={() => { this.updateRecipes('asiago') }}>
           <div className="cheese">
-            <img src="" alt="" id="asiago" />
+            <img src="asiago.png" alt="" id="asiago" className="cheese-img" />
           </div>
           Asiago
         </Link>
         <Link className="nav-item" to={`/type/fontina`} onClick={() => { this.updateRecipes('fontina') }}>
           <div className="cheese">
-            <img src="" alt="" id="fontina" />
+            <img src="fontina.png" alt="" id="fontina" className="cheese-img" />
           </div>
           Fontina
         </Link>
         <Link className="nav-item" to={`/type/american%20cheese`} onClick={() => { this.updateRecipes('american cheese') }}>
           <div className="cheese">
-            <img src="" alt="" id="american" />
+            <img src="american.png" alt="" id="american" className="cheese-img" />
           </div>
           American
         </Link>
