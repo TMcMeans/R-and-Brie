@@ -10,6 +10,7 @@ import Nav from '../Nav/Nav';
 import { Welcome } from '../../components/Welcome/Welcome';
 import RecipeView from '../RecipeView/RecipeView';
 import { Error } from '../../components/Error/Error'
+import { Loader } from '../../components/Loader/Loader'
 
 export class App extends Component {
   render() {

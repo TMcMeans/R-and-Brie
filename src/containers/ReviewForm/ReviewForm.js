@@ -31,6 +31,11 @@ export class ReviewForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
+    this.setState({
+      caption: '',
+      name: '',
+      rating: 0
+    })
     const { reviews } = this.props
     if (!reviews.includes(this.state.label)) {
       this.props.addReview(this.state)
@@ -43,9 +48,8 @@ export class ReviewForm extends Component {
     return (
       <div className="review">
         <form onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Enter your name" name="name" value={this.state.name} onChange={this.handleChange} />
-          <input type="text" placeholder="Add a comment..." name="caption" value={this.state.caption} onChange={this.handleChange} />
-          <h2>Rating from state: {rating}</h2>
+          <input type="text" placeholder="Enter your name" name="name" value={this.state.name} onChange={this.handleChange} required />
+          <input type="text" placeholder="Add a comment..." name="caption" value={this.state.caption} onChange={this.handleChange} required />
           <StarRatingComponent
             name="rate1"
             starCount={5}
@@ -55,7 +59,7 @@ export class ReviewForm extends Component {
             emptyStarColor={`#000`}
             className="star-ratings"
           />
-          <input type="submit" />
+          <input type="submit" className="submit-btn" value="Post" />
         </form>
       </div>
     );

@@ -3,6 +3,19 @@ $mainBackgroundColor: #fafff9;
 $mainAccentColor: #ffd65c;
 $mainFontColor: #393e41;
 
+//Loader transition variables
+$animation: 6s infinite;
+$pb: #ffd65c;
+$pb2: #ffd65c;
+$jam: #f9a03f;
+$jam2: #f9a03f;
+$crust: #e65100;
+$crust2: #c94700;
+$crumb: #ffd790;
+$crumb2: #ffd180;
+$background: #393e41;
+$background2: #393e41;
+
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Rozha+One');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
@@ -15,3 +28,8 @@ $mainFontColor: #393e41;
 @import 'Card';
 @import 'Welcome';
 @import 'RecipeView';
+@import 'Loader';
+@import 'Error';
+@import 'RecipeView';
+@import 'ReviewForm';
+@import 'ReviewSection';

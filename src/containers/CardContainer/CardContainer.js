@@ -6,6 +6,7 @@ import { Card } from '../../components/Card/Card';
 import { fetchRecipes } from '../../thunks/fetchRecipes';
 import { addRecipes } from '../../actions/index';
 import { Error } from '../../components/Error/Error'
+import { Loader } from '../../components/Loader/Loader'
 
 export class CardContainer extends Component {
 
@@ -17,7 +18,7 @@ export class CardContainer extends Component {
     if (!label) {
       return <Error />;
     } else if (isLoading) {
-      return <div>Loading</div>
+      return <Loader />
     } else {
       return (<div className="card-container">{recipeCards}</div>)
     }
