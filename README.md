@@ -5,13 +5,21 @@ R&BRIE is a web based application built in React that allows the user to search 
 ### Installation and Setup Instructions
 
 ```
-git clone https://github.com/TMcMeans/R-and-Brie
+Go to https://developer.edamam.com/ to request a recipe search API key
+```
 
-cd into the 'r-and-brie' repository
+Clone this repo and then type the following commands in your terminal: 
 
-npm install
+```
+$ git clone https://github.com/TMcMeans/R-and-Brie
 
-npm start
+cd into the 'r-and-brie' repository on your local machine
+
+$ npm install     // install dependencies 
+
+$ npm start   // start running the app in localhost 
+
+$ npm test    // to view passing tests 
 
 ```
 
